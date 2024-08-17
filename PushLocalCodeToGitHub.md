@@ -22,5 +22,17 @@ Sau khi tạo nhánh, bạn có thể chuyển đến nhánh mới bằng cách 
     git pull origin main
 + Chuyển lại đến nhánh của tôi: 
     git checkout VoLuong
-+ Merge nhánh chính vào nhánh của bạn
++ Merge nhánh chính vào nhánh của bạn (lấy code của nhánh main về nhánh riêng)
     git merge main
+
+- Update sự thay đổi từ nhánh riêng lên nhánh main
+1. git add <ten file thay doi>
+2. git commit -m "noi dung thay doi"
+3. Chuyển sang nhánh chính main
+    git checkout main
+4. cập nhật nhánh main (nếu cần) :
+    git pull origin main
+5. merge nhánh riêng vào nhánh chính
+    git pull VoLuong
+6. Đẩy các thay đổi lên remote repository 
+    git push origin main 
