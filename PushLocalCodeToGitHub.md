@@ -14,3 +14,13 @@ Sau khi tạo nhánh, bạn có thể chuyển đến nhánh mới bằng cách 
 - git branch : xem danh sách nhánh mới 
 - git status : Xem trạng thái hiện tại 
 - git log --oneline --graph --decorate --all : Xem lịch sử commit của nhánh hiện tại 
+
+- Merge nhánh chính vào nhánh riêng
++ git checkout VoLuong : Chuyển đến nhánh của bạn
++ Cập nhật nhánh chính từ xa:
+    git checkout main
+    git pull origin main
++ Chuyển lại đến nhánh của tôi: 
+    git checkout VoLuong
++ Merge nhánh chính vào nhánh của bạn
+    git merge main
